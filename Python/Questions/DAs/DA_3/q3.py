@@ -1,36 +1,29 @@
 import re
-s = input("Enter your sentence>")
-# def index_count:
+s = input("Enter you sentence>")
 
 
-def dup_rem(word, lis):
-    for x in range(len(lis)-3):
-        if lis[x] == word:
-            lis.pop(x)
-    return lis
+def is_dup(word):
+    word = r"\b" + word + r"\b"
+    l = re.findall(word, s)
+    return len(l) > 1
 
 
-def word_remover(word):
-    sen = s
-    pattern = r"\b"+word+r"\b"
-    sen = re.sub(pattern, x, sen, 1)
-    return sen
-
-
-def pos_finder(word):
-    sen = s
-    t = []
-    while re.search("\\b"+f"{word}"+"\\b", sen):
-        match = re.search("\\b"+f"{word}"+"\\b", sen)
-        t.append(match.span())
-        sen = re.sub("\\b"+f"{word}"+"\\b", '', sen, 1)
-    return t
-
-
-list_of_words = re.findall(r"\b\w+\b", s)
-for word in list_of_words:
-    x = re.findall("\\b"+f"{word}"+"\\b", s)
-    if len(x) > 1:
-        print(f"{word} repeated {len(x)} times. Positions are {pos_finder(word)}")
-        list_of_words = dup_rem(word, list_of_words)
-        re.sub(f"{word}", '', s)
+pattern = r"\b[A-Za-z]+\b"
+words = re.findall(pattern, s)
+# finding only the duplicated elements
+dup_words = []
+seen_words = []
+for word in words:
+    if word not in seen_words:
+        seen_words.append(word)
+    else:
+        if word not in dup_words:
+            dup_words.append(word)
+print(dup_words)
+for word in dup_words:
+    print(word+" ", end='')
+    word_n = r"\b"+word+r"\b"
+    while re.search(word_n, s):
+        print(re.search(word_n, s).span(), end=' ')
+        s = re.sub(word_n, '', s, 1)
+    print()
