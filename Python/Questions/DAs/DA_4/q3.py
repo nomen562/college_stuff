@@ -29,12 +29,14 @@ def replace_word_all_occurrences(file_path, target_word, replacement):
         print(f"Successfully replaced all occurrences of '{target_word}' with '{replacement}'.")
     except FileNotFoundError:
         print(f"Error: File '{file_path}' not found.")
-
-# Example usage:
+word_to_be_replaced_s = input("Enter word to be replaced for single instance>")
+replaced_word_s = input("Word to be replaced for that word>")
+word_to_be_replaced_m = input("Enter word to be replaced for multiple instances>")
+replaced_word_m = input("Word to be replaced for that word>")
 file_path = "example.txt"
 total_words = count_words(file_path)
 if total_words is not None:
     print(f"Total number of words in the file: {total_words}")
 
-replace_word_single_occurrence(file_path, 'apple', 'orange')
-replace_word_all_occurrences(file_path, 'banana', 'grape')
+replace_word_single_occurrence(file_path, word_to_be_replaced_s, replaced_word_s)
+replace_word_all_occurrences(file_path, word_to_be_replaced_m, replaced_word_m)

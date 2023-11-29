@@ -1,38 +1,91 @@
 import math
 import os
 
-def verify_log_identities():
-    x = 2.0
-    log_identity_1 = math.log(x) + math.log(x)
-    log_identity_2 = 2 * math.log(x)
+def trig():
+    a = float(input('Enter a number for a'))
+    b = float(input('Enter another for b'))
+    c=1
+    
+    # pi = math.pi  # Uncomment this line if you want to use pi as one of the inputs
+    s1 = math.sin(a + b)
+    s2 = math.sin(a - b)
+    s3 = math.sin(a)
+    s4 = math.sin(b)
+    c1 = math.cos(a + b)
+    c2 = math.cos(a - b)
+    c3 = math.cos(a)
+    c4 = math.cos(b)
+    t1 = math.tan(a + b)
+    t2 = math.tan(a - b)
+    t3 = math.tan(a)
+    t4 = math.tan(b)
+    if math.isclose(s1, s3 * c4 + s4 * c3):
+        file.write(f'identity {c} is valid\n')
+    c+=1
+    if math.isclose(s2, s3 * c4 - s4 * c3):
+        file.write(f'identity {c} is valid\n')
+    c+=1
+    if math.isclose(c1, c3 * c4 - s4 * s3):
+        file.write(f'identity {c} is valid\n')
+    c+=1
+    if math.isclose(c2, c3 * c4 + s4 * s3):
+        file.write(f'identity {c} is valid\n')
+    c+=1
+    if math.isclose(t1, (t3 + t4) / (1 - t3 * t4)):
+        file.write(f'identity {c} is valid\n')
+    c+=1
+    if math.isclose(t2, (t3 - t4) / (1 + t3 * t4)):
+        file.write(f'identity {c} is valid')
 
-    with open('log_res/log_identity_1_result.txt', 'w') as file:
-        file.write(f'The result of log(x) + log(x) is: {log_identity_1}')
+def log():
+    x = int(input('enter x>'))
+    y = int(input('enter y>'))
+    b = int(input('enter base '))
+    c=1
+    i1 = math.log((x * y), b)
+    i2 = math.log((x / y), b)
+    i3 = math.log((x ** y), b)
+    i4 = math.log((x ** (1 / y)), b)
+    i5 = math.log(x, b)
+    i6 = math.log(y, b)
+    if math.isclose(i1, i5 + i6):
+        file.write(f'identity {c} is valid\n')
+    c+=1
+    if math.isclose(i2, i5 - i6):
+        file.write(f'identity {c} is valid\n')
+    c+=1
+    if math.isclose(i3, i5 * y):
+        file.write(f'identity {c} is valid\n')
+    c+=1
+    if math.isclose(i4, i5 / y):
+        file.write(f'identity {c} is valid')
 
-    with open('log_res/log_identity_2_result.txt', 'w') as file:
-        file.write(f'The result of 2 * log(x) is: {log_identity_2}')
+if not os.path.exists("log_res"):
+    os.mkdir("log_res")
+    
+if not os.path.exists("tri_res"):
+    os.mkdir("tri_res")
+    
+os.chdir("/home/malik/Dev/college_stuff/Python/Questions/DAs/DA_4/log_res")
+file = open("log_results.txt",'w') 
+file.write("The results of the given logarithmic identites are as \n")
+# file.close()
+# file = open("log_results.txt",'a')
+log()
+file.close()
+file = open("log_results.txt",'r')
+x=file.read()
+print(x)
+file.close()
 
-def verify_trig_identities():
-    angle_rad = math.radians(45)  # Convert degrees to radians
-    sin_identity = math.sin(angle_rad)
-    cos_identity = math.cos(angle_rad)
-    tan_identity = math.tan(angle_rad)
-
-    with open('tri_res/sin_identity_result.txt', 'w') as file:
-        file.write(f'The result of sin(45 degrees) is: {sin_identity}')
-
-    with open('tri_res/cos_identity_result.txt', 'w') as file:
-        file.write(f'The result of cos(45 degrees) is: {cos_identity}')
-
-    with open('tri_res/tan_identity_result.txt', 'w') as file:
-        file.write(f'The result of tan(45 degrees) is: {tan_identity}')
-
-# Create folders if they don't exist
-os.makedirs('log_res', exist_ok=True)
-os.makedirs('tri_res', exist_ok=True)
-
-# Verify and store log identities
-verify_log_identities()
-
-# Verify and store trigonometric identities
-verify_trig_identities()
+os.chdir("/home/malik/Dev/college_stuff/Python/Questions/DAs/DA_4/tri_res")
+file = open("tri_results.txt",'w')
+file.write("The results of the given logarithmic identites are as \n")
+# file.close()
+# file = open("tri_results.txt",'a')
+trig()
+file.close
+file = open("tri_results.txt",'r')
+x=file.read()
+print(x)
+file.close()

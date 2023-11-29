@@ -1,0 +1,5 @@
+Average of Aditya is 25.0
+Average of Sunder is 22.0
+Average of Araval is 19.0
+Average of Sanjay is 16.0
+Average of Rishit is 13.0
