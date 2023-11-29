@@ -26,3 +26,5 @@ while fractional_part > epsilon:
 # Print the results
 print(f"Number of digits in whole part: {num_digits_whole}")
 print(f"Number of digits in fractional part: {num_digits_fractional}")
+
+l = [1,2,2,2,3,4,4,5]

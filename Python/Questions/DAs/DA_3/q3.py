@@ -5,8 +5,7 @@ s = input("Enter you sentence>")
 def is_dup(word):
     word = r"\b" + word + r"\b"
     l = re.findall(word, s)
-    return len(l) > 1
-
+    return len(l) > 1 
 
 pattern = r"\b[A-Za-z]+\b"
 words = re.findall(pattern, s)
