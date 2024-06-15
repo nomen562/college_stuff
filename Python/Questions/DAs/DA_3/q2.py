@@ -6,11 +6,11 @@ Maths_below_60 = {'s1', 's2', 's7', 's8'}
 english_70_plus = {'s3', 's4', 's9'}
 English_below_40 = {'s1', 's2'}
 
-
+# AND OPERATION
 def fun1():
     return (Sci_fail & Math_80_plus)
 
-
+#OR OPERATION
 def fun2():
     return (Sci_pass | English_below_40)
 

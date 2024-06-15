@@ -10,5 +10,5 @@ def main():
             f += 1
             if f == n:
                 break
-    kk = (f"The sum of odd factors are>{s+1}")
-    return kk
+    return (f"The sum of odd factors are>{s+1}")    
+print(main())

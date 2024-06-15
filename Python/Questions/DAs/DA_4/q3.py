@@ -33,7 +33,7 @@ word_to_be_replaced_s = input("Enter word to be replaced for single instance>")
 replaced_word_s = input("Word to be replaced for that word>")
 word_to_be_replaced_m = input("Enter word to be replaced for multiple instances>")
 replaced_word_m = input("Word to be replaced for that word>")
-file_path = "example.txt"
+file_path = "./college_stuff/Python/Questions/DAs/DA_4/example.txt"
 total_words = count_words(file_path)
 if total_words is not None:
     print(f"Total number of words in the file: {total_words}")

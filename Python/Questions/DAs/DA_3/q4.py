@@ -4,7 +4,7 @@ n3 = int(input("Enter 3rd number>"))
 pf = "1"
 c = 2
 
-
+# Finding if the parameter is a prime number or not
 def is_prime(n):
     c = 0
     for i in range(1, n+1):

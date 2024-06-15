@@ -11,11 +11,11 @@ def class_average():
     for key in l:
         per[key] = (l[key][0] + l[key][1] + l[key][2])/3
         e_av += l[key][0]/5
-        s_av += l[key][1]/5
+        s_av += l[key][1]/5 # Finding class average of each subject
         m_av += l[key][2]/5
     return e_av,s_av,m_av
 ca = class_average()
-f.close()
+f.close() # Sorting in descending order
 perc = dict(sorted(per.items(), key=lambda x:x[1], reverse=True))
 print(perc)
 def file_write():

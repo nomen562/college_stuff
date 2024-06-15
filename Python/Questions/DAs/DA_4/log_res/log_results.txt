@@ -1,0 +1,5 @@
+The results of the given logarithmic identites are as 
+identity 1 is valid
+identity 2 is valid
+identity 3 is valid
+identity 4 is valid
