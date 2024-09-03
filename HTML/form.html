@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" href="images/minecraft.png">
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="index.php" method="POST" enctype="multipart/form-data">
+      <label for="username">Username:</label>
+      <input type="text" placeholder="Spongebob" required pattern="a" />
+      <br />
+      <label for="password">Password:</label>
+      <input type="password" name="" id="password" /> <br />
+      <input type="reset" name="" id="" /> <br />
+      <label for="email">Email:</label>
+      <input type="email" name="" id="email" />
+      <input type="submit" name="" id="" />
+
+      <label for="phone">Phone #</label>
+      <input type="tel" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" /><br />
+
+      <label for="bday">Birthday</label>
+      <input type="date" id="bday" /><br />
+
+      <label for="quantity">Quantity:</label>
+      <input type="number" min="0" id="quantity" value="2 " /><br />
+
+      <label for="title">Title:</label>
+
+      <label for="mr">Mr.</label>
+      <input type="radio" name="title" id="mr" />
+
+      <label for="ms">Ms.</label>
+      <input type="radio" name="title" id="ms" />
+
+      <label for="phd">Phd.</label>
+      <input type="radio" name="title" id="phd" /><br />
+
+      <label for="payment">Payment:</label>
+      <select name="" id="payment">
+        <option value="VISA">VISA</option>
+        <option value="Mastercard">Mastercard</option>
+        <option value="Gpay">Gpay</option></select
+      ><br />
+
+      <label for="checkbox">Subscribe</label>
+      <input type="checkbox" name="" id="nicheckbox" /><br />
+
+      <label for="textbox">Description</label>
+      <textarea name="" id="textbox" rows="1" cols="1"></textarea><br />
+
+      <label for="file">Choose</label>
+      <input type="file" accept="video/*" id="file" /><br />
+    </form>
+  </body>
+</html>
