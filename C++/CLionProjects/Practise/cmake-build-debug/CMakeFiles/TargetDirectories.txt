@@ -1,0 +1,3 @@
+/home/malik/Dev/college_stuff/C++/CLionProjects/Practise/cmake-build-debug/CMakeFiles/Practise.dir
+/home/malik/Dev/college_stuff/C++/CLionProjects/Practise/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/malik/Dev/college_stuff/C++/CLionProjects/Practise/cmake-build-debug/CMakeFiles/rebuild_cache.dir

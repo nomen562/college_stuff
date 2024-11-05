@@ -1,0 +1,7 @@
+# ninja log v6
+446	486	1727035447992674417	Practise	abbcf74eb637320b
+79	446	1727035447625674015	CMakeFiles/Practise.dir/main.cpp.o	d11799e51e85049e
+76	79	1727035447622674011	CMakeFiles/Practise.dir/main.cpp.o.modmap	5156bce9a4cf4ca
+76	79	1727035447622674011	/home/malik/Dev/college_stuff/C++/CLionProjects/Practise/cmake-build-debug/CMakeFiles/Practise.dir/CXXModules.json	5156bce9a4cf4ca
+76	79	1727035447622674011	CMakeFiles/Practise.dir/CXX.dd	5156bce9a4cf4ca
+2	76	1727035447548673930	CMakeFiles/Practise.dir/main.cpp.o.ddi	f8382f1dfb327029
