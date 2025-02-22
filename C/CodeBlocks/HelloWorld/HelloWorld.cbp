@@ -33,8 +33,15 @@
 		</Compiler>
 		<Unit filename="conditionalmacros.c">
 			<Option compilerVar="CC" />
+			<Option compile="0" />
+			<Option link="0" />
 		</Unit>
 		<Unit filename="factorial.c">
+			<Option compilerVar="CC" />
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="input.c">
 			<Option compilerVar="CC" />
 			<Option compile="0" />
 			<Option link="0" />
@@ -49,7 +56,25 @@
 			<Option compile="0" />
 			<Option link="0" />
 		</Unit>
+		<Unit filename="pfunction.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="strings.c">
+			<Option compilerVar="CC" />
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="structures.c">
+			<Option compilerVar="CC" />
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
 		<Unit filename="temp.c">
+			<Option compilerVar="CC" />
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="typedef.c">
 			<Option compilerVar="CC" />
 			<Option compile="0" />
 			<Option link="0" />

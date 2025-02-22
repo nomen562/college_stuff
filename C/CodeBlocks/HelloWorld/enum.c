@@ -25,6 +25,10 @@ int main()
     int x = 4;
     point = (enum Point) x;
 
+    {
+    printf("xzvzxc");
+    }
+
     return 0;
 }
 

@@ -1,4 +1,4 @@
-package com.codewithmosh.Inheritance;
+package Inheritance;
 
 import java.io.BufferedReader;
 import java.io.IOException;
