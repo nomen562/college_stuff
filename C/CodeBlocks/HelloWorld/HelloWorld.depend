@@ -1,0 +1,30 @@
+# depslib dependency file v1.0
+1735748541 source:/media/malik/773dd0ca-5550-4f9e-abe1-7ce1a787f714/home/malik/Dev/college_stuff/C/CodeBlocks/HelloWorld/main.c
+	<stdio.h>
+	<stdlib.h>
+
+1735104583 source:/media/malik/773dd0ca-5550-4f9e-abe1-7ce1a787f714/home/malik/Dev/college_stuff/C/CodeBlocks/HelloWorld/HelloWorld.c
+	<stdio.h>
+
+1735107087 source:/media/malik/773dd0ca-5550-4f9e-abe1-7ce1a787f714/home/malik/Dev/college_stuff/C/CodeBlocks/HelloWorld/factorial.c
+	<stdio.h>
+	<stdlib.h>
+
+1735143159 source:/media/malik/773dd0ca-5550-4f9e-abe1-7ce1a787f714/home/malik/Dev/college_stuff/C/CodeBlocks/HelloWorld/fibonacchi.c
+	<stdio.h>
+
+1735277553 source:/media/malik/773dd0ca-5550-4f9e-abe1-7ce1a787f714/home/malik/Dev/college_stuff/C/CodeBlocks/HelloWorld/trash.c
+	<stdio.h>
+	<stdbool.h>
+
+1735277518 source:/media/malik/773dd0ca-5550-4f9e-abe1-7ce1a787f714/home/malik/Dev/college_stuff/C/CodeBlocks/HelloWorld/trash1.c
+
+1735482254 source:/media/malik/773dd0ca-5550-4f9e-abe1-7ce1a787f714/home/malik/Dev/college_stuff/C/CodeBlocks/HelloWorld/precision.c
+	<stdio.h>
+
+1735107253 source:/media/malik/773dd0ca-5550-4f9e-abe1-7ce1a787f714/home/malik/Dev/college_stuff/C/CodeBlocks/HelloWorld/temp.c
+	<stdio.h>
+
+1736291017 source:/media/malik/773dd0ca-5550-4f9e-abe1-7ce1a787f714/home/malik/Dev/college_stuff/C/CodeBlocks/HelloWorld/char.c
+	<stdio.h>
+
